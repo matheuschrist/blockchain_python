@@ -48,3 +48,4 @@ def i_valid():
 def add_trasaction():
     json=request.get_json()
     transactions_keys=['sender','receiver','amount']
+    teste de alteação
