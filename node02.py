@@ -20,7 +20,7 @@ def mine_block():
     proof=blockchain.proof_of_work(previous_proof)
     previous_hash=blockchain.hash(previous_block)
     blockchain.add_transaction(sender=node_address,
-                               receiver='Matheus',
+                               receiver='Joao',
                                amount=1)
     block=blockchain.create_block(proof,previous_hash)
     response={'message':'Block Minerado com Sucesso',
@@ -79,4 +79,4 @@ def replace_chain():
 
     return jsonify(response),201
 
-app.run(host='0.0.0.0',port=5000)
+app.run(host='0.0.0.0',port=5002)
